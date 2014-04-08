@@ -65,8 +65,8 @@ function ougc_blockbyprefix_info()
 		'website'		=> 'http://mods.mybb.com/view/ougc-block-by-thread-prefix',
 		'author'		=> 'Omar G.',
 		'authorsite'	=> 'http://omarg.me',
-		'version'		=> '1.0',
-		'versioncode'	=> 1000,
+		'version'		=> '1.1',
+		'versioncode'	=> 1100,
 		'compatibility'	=> '16*',
 		'guid' 			=> '6507442d095476f59e2843954e7f93b3',
 		'pl'			=> array(
