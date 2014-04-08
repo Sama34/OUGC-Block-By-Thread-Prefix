@@ -1,7 +1,7 @@
 [![Omar G.](http://omarg.me/public/images/logo.png "Omar G. MyBB Page")](http://omarg.me/mybb "Omar G. MyBB Page")
 
 ## OUGC Block By Thread Prefix
-Block threads by thread prefix.
+Blocks groups from viewing threads with specific thread prefixes.
 
 ***
 

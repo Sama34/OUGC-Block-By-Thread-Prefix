@@ -8,7 +8,7 @@
  *
  *	Website: http://omarg.me
  *
- *	Block threads by thread prefix.
+ *	Blocks groups from viewing threads with specific thread prefixes.
  *
  ***************************************************************************
 
