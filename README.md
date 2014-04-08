@@ -11,7 +11,8 @@ Block threads by thread prefix.
 ### Installation
 1. Upload the content of the "upload" folder to your MyBB root folder.
 2. Go to ACP -> Configuration -> Plugins and activate/install the plugin.
-3. __Enjoy!__
+3. Go to ACP -> Thread Prefixes and update your prefixes.
+4. __Enjoy!__
 
 ### Update
 ##### 1.0 to 1.1

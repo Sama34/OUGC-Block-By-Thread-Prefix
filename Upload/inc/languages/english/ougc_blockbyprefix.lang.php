@@ -4,7 +4,7 @@
  *
  *   OUGC Block By Thread Prefix plugin (/inc/languages/english/ougc_blockbyprefix.lang.php)
  *	 Author: Omar Gonzalez
- *   Copyright: © 2013 Omar Gonzalez
+ *   Copyright: Â© 2013 Omar Gonzalez
  *   
  *   Website: http://community.mybb.com/user-25096.html
  *
@@ -27,9 +27,11 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ****************************************************************************/
 
+// Plugin API
 $l['ougc_blockbyprefix'] = 'OUGC Block By Thread Prefix';
-$l['ougc_blockbyprefix_d'] = 'Block threads by thread prefix.';
+$l['ougc_blockbyprefix_desc'] = 'Block threads by thread prefix.';
 
+// ACP Thread Prefixes
 $l['ougc_blockbyprefix_container'] = 'Visible by groups';
 $l['ougc_blockbyprefix_all'] = 'All groups';
 $l['ougc_blockbyprefix_selected'] = 'Select groups';
