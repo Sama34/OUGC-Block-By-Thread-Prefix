@@ -66,8 +66,8 @@ function ougc_blockbyprefix_info()
 		'website'		=> 'http://omarg.me',
 		'author'		=> 'Omar G.',
 		'authorsite'	=> 'http://omarg.me',
-		'version'		=> '1.1',
-		'versioncode'	=> 1100,
+		'version'		=> '1.8',
+		'versioncode'	=> 1800,
 		'compatibility'	=> '18*',
 		'pl'			=> array(
 			'version'	=> 12,
