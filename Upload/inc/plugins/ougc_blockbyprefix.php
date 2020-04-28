@@ -4,11 +4,11 @@
  *
  *	OUGC Block By Thread Prefix plugin (/inc/plugins/ougc_blockbyprefix.php)
  *	Author: Omar Gonzalez
- *	Copyright: © 2013 - 2014 Omar Gonzalez
+ *	Copyright: © 2013-2020 Omar Gonzalez
  *
- *	Website: http://omarg.me
+ *	Website: https://ougc.network
  *
- *	Block threads by thread prefix.
+ *	Blocks groups from viewing threads with specific thread prefixes.
  *
  ***************************************************************************
 
@@ -63,15 +63,15 @@ function ougc_blockbyprefix_info()
 	return array(
 		'name'			=> 'OUGC Block By Thread Prefix',
 		'description'	=> $lang->ougc_blockbyprefix_desc,
-		'website'		=> 'http://omarg.me',
+		'website'		=> 'https://ougc.network',
 		'author'		=> 'Omar G.',
-		'authorsite'	=> 'http://omarg.me',
-		'version'		=> '1.8',
-		'versioncode'	=> 1800,
+		'authorsite'	=> 'https://ougc.network',
+		'version'		=> '1.8.22',
+		'versioncode'	=> 1822,
 		'compatibility'	=> '18*',
 		'pl'			=> array(
-			'version'	=> 12,
-			'url'		=> 'http://mods.mybb.com/view/pluginlibrary'
+			'version'	=> 13,
+			'url'		=> 'https://community.mybb.com/mods.php?action=view&pid=573'
 		)
 	);
 }
@@ -215,12 +215,12 @@ function ougc_blockbyprefix_container()
 		$checked = (!empty($mybb->input['vgroup_1_vgroups']) ? array('all' => '', 'select' => ' checked="checked"') : array('all' => 'checked="checked"', 'select' => ''));
 
 		$form_container->output_row($lang->ougc_blockbyprefix_container.' <em>*</em>', '', '<dl style="margin-top: 0; margin-bottom: 0; width: 100%;">
-		<dt><label style="display: block;"><input type="radio" name="vgroup_type" value="1" class="vgroups_check" onclick="checkAction(\'vgroup\');" style="vertical-align: middle;"'.$checked['all'].' /> <strong>'.$lang->ougc_blockbyprefix_all.'</strong></label></dt>
-			<dt><label style="display: block;"><input type="radio" name="vgroup_type" value="2" class="vgroups_check" onclick="checkAction(\'vgroup\');" style="vertical-align: middle;"'.$checked['select'].' /> <strong>'.$lang->ougc_blockbyprefix_selected.'</strong></label></dt>
+		<dt><label style="display: block;"><input type="radio" name="vgroup_type" value="1" class="vgroups_check" onclick="checkAction(\'vgroup\');" style="vertical-align: middle;"'.$checked['all'].' /> <strong>'.$lang->all_groups.'</strong></label></dt>
+			<dt><label style="display: block;"><input type="radio" name="vgroup_type" value="2" class="vgroups_check" onclick="checkAction(\'vgroup\');" style="vertical-align: middle;"'.$checked['select'].' /> <strong>'.$lang->select_groups.'</strong></label></dt>
 			<dd style="margin-top: 4px;" id="vgroup_2" class="vgroups">
 				<table cellpadding="4">
 					<tr>
-						<td valign="top"><small>'.$lang->ougc_blockbyprefix_groups.'</small></td>
+						<td valign="top"><small>'.$lang->groups_colon.'</small></td>
 						<td>'.$form->generate_group_select('vgroup_1_vgroups[]', (array)$mybb->input['vgroup_1_vgroups'], array('multiple' => true, 'size' => 5)).'</td>
 					</tr>
 				</table>
@@ -314,7 +314,7 @@ function ougc_blockbyprefix_portal()
 /**
  * Get a list of the unviewable prefixes for the current user
  *
- * @return string Comma separated values list of the prefixe IDs which the user cannot view
+ * @return string Comma separated values list of prefix IDs which the user cannot view
 **/
 function ougc_get_unviewable_prefixes()
 {

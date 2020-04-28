@@ -2,7 +2,7 @@
 
 /***************************************************************************
  *
- *	OUGC Block By Thread Prefix plugin (/inc/languages/english/admin/ougc_blockbyprefix.lang.php)
+ *	OUGC Block By Thread Prefix plugin (/inc/languages/espanol/admin/ougc_blockbyprefix.lang.php)
  *	Author: Omar Gonzalez
  *	Copyright: © 2013-2020 Omar Gonzalez
  *
@@ -29,7 +29,7 @@
 
 // Plugin API
 $l['ougc_blockbyprefix'] = 'OUGC Block By Thread Prefix';
-$l['ougc_blockbyprefix_desc'] = 'Blocks groups from viewing threads with specific thread prefixes.';
+$l['ougc_blockbyprefix_desc'] = 'Bloquea a ciertos grupos de ver hilos con prefijos especificos.';
 
 // ACP Thread Prefixes
-$l['ougc_blockbyprefix_container'] = 'Visible by groups';
+$l['ougc_blockbyprefix_container'] = 'Visible por grupos';
