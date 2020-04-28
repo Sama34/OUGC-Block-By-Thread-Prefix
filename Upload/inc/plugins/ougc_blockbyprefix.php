@@ -48,6 +48,7 @@ else
 	$plugins->add_hook('archive_thread_start', 'ougc_blockbyprefix_hack');
 	$plugins->add_hook('newreply_do_newreply_start', 'ougc_blockbyprefix_hack');
 	$plugins->add_hook('newreply_start', 'ougc_blockbyprefix_hack');
+	$plugins->add_hook('portal_start', 'ougc_blockbyprefix_portal');
 }
 
 // PLUGINLIBRARY
